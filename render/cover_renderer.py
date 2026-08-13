@@ -62,7 +62,7 @@ def render_cover_letter(data, letter, output_path):
 
     subject = _clean(letter.get("subject"))
     if not subject:
-        subject = f"Application for {letter.get('role', '')} — {letter.get('company', '')}"
+        subject = f"Application for {letter.get('role', '')} at {letter.get('company', '')}"
     if subject:
         story.append(Paragraph(f"<b>Re: {pdfkit.escape(subject)}</b>", styles["body"]))
         story.append(Spacer(1, 0.05 * inch))

@@ -1,10 +1,10 @@
 {
   "filename": "Resume_Data_Scientist",
   "title": "Data Scientist",
-  "summary": "Data Scientist with a strong foundation in [statistics / ML / experimentation]. Skilled in [analyzing data], [building models], and [communicating insights] to drive business decisions. Experienced with [tools] and [domain].",
-  "sections": ["summary", "skills", "experience", "projects", "education", "certifications"],
+  "summary": "Data Scientist with hands-on experience in predictive modeling, feature engineering, and model explainability, from stock-prediction systems at Brain Hub Technologies to medical ML pipelines with SHAP analysis. Co-author of published research on Generative AI, with competitive Kaggle results (0.97 ROC-AUC) and production experience serving models through FastAPI.",
+  "sections": ["summary", "skills", "experience", "projects", "publications", "education", "certifications"],
   "skills": {
-    "order": ["programming_languages", "frameworks_libraries", "tools_platforms"]
+    "order": ["programming_languages", "ml_techniques", "ml_frameworks", "data_mlops", "computer_vision"]
   },
   "experience": { "limit": 4 },
   "projects": { "limit": 5 },

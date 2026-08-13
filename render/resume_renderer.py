@@ -85,10 +85,10 @@ class ResumeRenderer:
             end = _clean(entry.get("end"))
             left = pdfkit.escape(role)
             if company:
-                left += f" — {pdfkit.escape(company)}"
+                left += f" at {pdfkit.escape(company)}"
             if location:
                 left += f", {pdfkit.escape(location)}"
-            right = " – ".join([d for d in (start, end) if d])
+            right = " to ".join([d for d in (start, end) if d])
             group = [pdfkit.header_table(f"<b>{left}</b>", pdfkit.escape(right), self.styles)]
             group += self._bullets(entry.get("bullets", []))
             flowables.append(KeepTogether(group))
@@ -128,8 +128,8 @@ class ResumeRenderer:
             gpa = _clean(entry.get("gpa"))
             left = pdfkit.escape(degree)
             if school:
-                left += f" — {pdfkit.escape(school)}"
-            right = " – ".join([d for d in (start, end) if d])
+                left += f", {pdfkit.escape(school)}"
+            right = " to ".join([d for d in (start, end) if d])
             group = [pdfkit.header_table(f"<b>{left}</b>", pdfkit.escape(right), self.styles)]
             detail = []
             if location:
@@ -153,7 +153,7 @@ class ResumeRenderer:
             date = _clean(entry.get("date"))
             text = name
             if issuer:
-                text += f" — {issuer}"
+                text += f", {issuer}"
             if date:
                 text += f" ({date})"
             flowables.append(Paragraph(pdfkit.escape(text), self.styles["skills_line"]))
@@ -174,7 +174,7 @@ class ResumeRenderer:
                 continue
             text = f"<b>{pdfkit.escape(title)}</b>"
             if venue:
-                text += f" — {pdfkit.escape(venue)}"
+                text += f". {pdfkit.escape(venue)}"
             if year:
                 text += f" ({year})"
             if authors:
@@ -233,5 +233,5 @@ def render_resume(data, profile, output_path):
     doc.build(story, onFirstPage=page_callback, onLaterPages=page_callback)
 
     if page_count["n"] > 1:
-        print(f"[warn] Resume is {page_count['n']} pages — consider trimming bullets or sections.")
+        print(f"[warn] Resume is {page_count['n']} pages, consider trimming bullets or sections.")
     return output_path

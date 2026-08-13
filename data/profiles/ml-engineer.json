@@ -1,7 +1,7 @@
 {
   "filename": "Resume_AI_ML_Engineer",
   "title": "AI / ML Engineer",
-  "summary": "AI/ML Engineer with ~1.5 years of experience building and deploying machine learning systems — from stock-prediction models that drove ~30% revenue growth at Brain Hub Technologies to production computer-vision and LLM fine-tuning projects. Co-author of published research on Generative AI in a HEC-recognized journal, with competitive Kaggle results (0.97 ROC-AUC). Hands-on across PyTorch, Hugging Face, FastAPI, and end-to-end MLOps.",
+  "summary": "AI/ML Engineer with over a year of experience building and deploying machine learning systems, from stock-prediction models that drove ~30% revenue growth at Brain Hub Technologies to production computer-vision and LLM fine-tuning projects. Co-author of published research on Generative AI in a HEC-recognized journal, with competitive Kaggle results (0.97 ROC-AUC). Hands-on across PyTorch, Hugging Face, FastAPI, and end-to-end MLOps.",
   "sections": ["summary", "skills", "experience", "projects", "publications", "education", "certifications"],
   "skills": {
     "order": ["ml_frameworks", "ml_techniques", "computer_vision", "programming_languages", "data_mlops", "mobile_web"]

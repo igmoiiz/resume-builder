@@ -20,13 +20,13 @@
   "experience": [
     {
       "id": "brain-hub",
-      "role": "Senior ML Engineer",
+      "role": "AI/ML & Mobile Developer Intern",
       "company": "Brain Hub Technologies (Trade With Shaw)",
       "location": "Multan, Pakistan",
-      "start": "Jan 2025",
+      "start": "Jun 2025",
       "end": "Oct 2025",
       "bullets": [
-        "Designed and deployed stock-price prediction models to improve trading profitability, using Python-based ML pipelines — contributing ~30% increase in trading revenue across internal operations and international client portfolios.",
+        "As the only AI/ML developer on the team, designed and deployed stock-price prediction models to improve trading profitability, using Python-based ML pipelines, contributing to a ~30% increase in trading revenue across internal operations and international client portfolios.",
         "Built end-to-end pipelines from feature engineering to model serving, ensuring consistent, measurable performance across multiple client portfolios."
       ]
     },
@@ -36,9 +36,9 @@
       "company": "Al-Safeena (Saudi Arabia)",
       "location": "Remote",
       "start": "Oct 2025",
-      "end": "May 2026",
+      "end": "Jul 2026",
       "bullets": [
-        "Built a home-services freelance marketplace to give Saudi vendors a centralized platform for consistent business, using Flutter and Node.js backends — contributing ~40% increase in company revenue.",
+        "Built a home-services freelance marketplace to give Saudi vendors a centralized platform for consistent business, using Flutter and Node.js backends, contributing to a ~40% increase in company revenue.",
         "Continuing as Final Year Project: managing incremental feature development and deployment of the live platform."
       ]
     }
@@ -54,25 +54,25 @@
       "gpa": "",
       "highlights": [
         "Relevant coursework: Machine Learning, Deep Learning, Data Structures & Algorithms, Databases",
-        "Final Year Project: Al-Safeena — home services marketplace for a Saudi Arabian client"
+        "Final Year Project: Al-Safeena, home services marketplace for a Saudi Arabian client"
       ]
     }
   ],
   "projects": [
     {
       "id": "visionguard",
-      "name": "VisionGuard — Production Video Analytics Platform",
+      "name": "VisionGuard",
       "date": "2026",
       "tech": ["YOLO11", "ByteTrack", "OpenCV", "FastAPI", "WebSockets", "PySide6"],
       "summary": "",
       "bullets": [
-        "Built a real-time intelligent video analytics platform to run reliably on CPU-only hardware, using YOLO11 detection, ByteTrack tracking, and a 9-rule event engine (intrusion, loitering, line-crossing).",
+        "Built a real-time intelligent video analytics platform to deliver continuous, reliable monitoring on CPU-only hardware, using YOLO11 detection, ByteTrack tracking, and a 9-rule event engine (intrusion, loitering, line-crossing).",
         "Architected with 12 enterprise design patterns and a publish/subscribe frame bus, served through a FastAPI + WebSocket API with an analytics dashboard."
       ]
     },
     {
       "id": "researchmate",
-      "name": "ResearchMate — LLM Fine-Tuning for Scientific QA",
+      "name": "ResearchMate",
       "date": "2026",
       "tech": ["Qwen2.5-3B", "LoRA", "Transformers", "TRL", "PubMedQA", "arXiv"],
       "summary": "",
@@ -83,8 +83,8 @@
     },
     {
       "id": "jarvis",
-      "name": "J.A.R.V.I.S — Agentic Voice Assistant",
-      "date": "Jan 2026 – Present",
+      "name": "J.A.R.V.I.S",
+      "date": "Jan 2026 to Present",
       "tech": ["Whisper", "Ollama", "Qwen2.5", "Python"],
       "summary": "",
       "bullets": [
@@ -93,18 +93,18 @@
     },
     {
       "id": "smartphone-kaggle",
-      "name": "Smartphone Addiction Prediction — Kaggle Competition",
+      "name": "Smartphone Addiction Prediction (Kaggle)",
       "date": "2026",
       "tech": ["LightGBM", "XGBoost", "CatBoost", "Optuna", "scikit-learn"],
       "summary": "",
       "bullets": [
-        "Built a 4-model ensemble with Optuna-tuned hyperparameters and fold-safe target encoding to predict smartphone addiction risk, achieving Public LB 0.97094 / OOF AUC 0.969996."
+        "Built a 4-model ensemble to predict smartphone addiction risk for a Kaggle competition, using Optuna-tuned hyperparameters and fold-safe target encoding, achieving Public LB 0.97094 and OOF AUC 0.969996."
       ]
     },
     {
       "id": "rbc",
       "name": "Red Blood Cell Anomaly Detection Pipeline",
-      "date": "Jun 2024 – Jul 2024",
+      "date": "Jun 2024 to Jul 2024",
       "tech": ["XGBoost", "SHAP", "Ollama", "Qwen2.5-7B"],
       "summary": "",
       "bullets": [
@@ -114,22 +114,22 @@
     },
     {
       "id": "blynd",
-      "name": "BLYND — AI-Driven Social Platform",
-      "date": "Nov 2023 – Jun 2024",
+      "name": "BLYND",
+      "date": "Nov 2023 to Jun 2024",
       "tech": ["Optuna", "Recommendation Systems", "Python"],
       "summary": "",
       "bullets": [
-        "Designed a social media platform with an Optuna-tuned, self-learning model that auto-suggests content and products based on user behavior."
+        "Designed a social media platform with an Optuna-tuned, self-learning model to auto-suggest content and products based on user behavior."
       ]
     },
     {
       "id": "idea-catalyst",
-      "name": "Idea Catalyst — AI Project Evaluation Platform",
-      "date": "Feb 2026 – Mar 2026",
+      "name": "Idea Catalyst",
+      "date": "Feb 2026 to Mar 2026",
       "tech": ["FastAPI", "TypeScript", "AI Analysis"],
       "summary": "",
       "bullets": [
-        "Built a platform for Air University faculty to publish project recommendations, with an AI analysis module generating market potential, feasibility scores, and development guidance per idea."
+        "Built an AI-powered platform to help Air University faculty publish project recommendations and guide students toward market-aligned ideas, generating market potential, feasibility scores, and development guidance per idea."
       ]
     },
     {
@@ -154,6 +154,12 @@
     }
   ],
   "certifications": [
+    {
+      "id": "giki-bootcamp",
+      "name": "GIKI Advance AI Bootcamp",
+      "issuer": "Ghulam Ishaq Khan Institute",
+      "date": "Jul 2026 to Aug 2026"
+    },
     {
       "id": "anthropic-claude",
       "name": "Anthropic Claude 101 Courses (incl. Claude Code)",
