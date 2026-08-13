@@ -1,0 +1,13 @@
+{
+  "filename": "Resume_ML_Engineer",
+  "title": "Machine Learning Engineer",
+  "summary": "Machine Learning Engineer specializing in [domain]. [Years] of experience building and deploying [ML systems] end-to-end, from data pipelines to model serving, with a focus on [your strength]. Passionate about [topic] and production-grade [infra/tooling].",
+  "sections": ["summary", "skills", "experience", "projects", "education", "certifications"],
+  "skills": {
+    "order": ["frameworks_libraries", "programming_languages", "tools_platforms"]
+  },
+  "experience": { "limit": 4 },
+  "projects": { "limit": 4 },
+  "certifications": {},
+  "languages": {}
+}

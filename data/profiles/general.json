@@ -1,0 +1,13 @@
+{
+  "filename": "Resume_General",
+  "title": "[Your Primary Target Role]",
+  "summary": "[2-3 sentence general summary: who you are, your key strengths, and what you are looking for.]",
+  "sections": ["summary", "skills", "experience", "projects", "education", "certifications"],
+  "skills": {
+    "order": ["programming_languages", "frameworks_libraries", "tools_platforms"]
+  },
+  "experience": { "limit": 5 },
+  "projects": { "limit": 5 },
+  "certifications": {},
+  "languages": {}
+}

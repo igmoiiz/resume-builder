@@ -1,0 +1,75 @@
+{
+  "name": "[Your Full Name]",
+  "role": "[Your Primary Target Role]",
+  "contact": {
+    "email": "you@example.com",
+    "phone": "+1 234 567 8900",
+    "location": "City, Country",
+    "linkedin": "linkedin.com/in/yourhandle",
+    "github": "github.com/yourhandle",
+    "portfolio": ""
+  },
+  "skills": {
+    "programming_languages": ["Python", "SQL", "C++"],
+    "frameworks_libraries": ["PyTorch", "TensorFlow", "scikit-learn", "Pandas"],
+    "tools_platforms": ["Git", "Docker", "MLflow", "AWS"]
+  },
+  "experience": [
+    {
+      "id": "example-internship",
+      "role": "Data Science Intern",
+      "company": "[Company Name]",
+      "location": "City, Country",
+      "start": "Jun 2025",
+      "end": "Sep 2025",
+      "bullets": [
+        "Built [X] that did [Y], improving [metric] by [Z]%.",
+        "Collaborated with [team] to [outcome], using [tools].",
+        "Automated [process], saving [N] hours per week."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "example-degree",
+      "degree": "B.S. Computer Science (AI/ML)",
+      "school": "[University Name]",
+      "location": "City, Country",
+      "start": "Sep 2021",
+      "end": "Jun 2025",
+      "gpa": "3.8/4.0",
+      "highlights": [
+        "Relevant coursework: Machine Learning, Deep Learning, Data Structures & Algorithms",
+        "Senior project: [short description]"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "example-project",
+      "name": "[Project Name]",
+      "date": "2025",
+      "tech": ["PyTorch", "Hugging Face", "FastAPI"],
+      "summary": "[One-line description of the project and its impact.]",
+      "bullets": [
+        "Fine-tuned [model] on [dataset] to achieve [metric].",
+        "Deployed [service] with [infra], handling [load]."
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "id": "example-cert",
+      "name": "[Certification Name]",
+      "issuer": "[Issuer]",
+      "date": "2025"
+    }
+  ],
+  "languages": [
+    {
+      "id": "example-language",
+      "language": "English",
+      "level": "Fluent"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "company": "Acme Data Solutions",
+  "role": "Machine Learning Engineer",
+  "date": "",
+  "recipient": {
+    "name": "Hiring Manager",
+    "title": "",
+    "company": "Acme Data Solutions",
+    "address": ["123 Innovation Drive", "San Francisco, CA 94107"]
+  },
+  "subject": "Application for Machine Learning Engineer",
+  "body": [
+    "Dear Hiring Manager,",
+    "[Opening paragraph: introduce yourself, the role you are applying for, and why you are interested in this company.]",
+    "[Middle paragraph: highlight your most relevant skills and experience. Mention 1-2 specific achievements with numbers, and connect them to the requirements of the role.]",
+    "[Closing paragraph: summarize your enthusiasm, reference your attached resume, and invite them to discuss your application.]"
+  ],
+  "closing": "Sincerely,"
+}

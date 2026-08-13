@@ -1,0 +1,13 @@
+{
+  "filename": "Resume_Data_Scientist",
+  "title": "Data Scientist",
+  "summary": "Data Scientist with a strong foundation in [statistics / ML / experimentation]. Skilled in [analyzing data], [building models], and [communicating insights] to drive business decisions. Experienced with [tools] and [domain].",
+  "sections": ["summary", "skills", "experience", "projects", "education", "certifications"],
+  "skills": {
+    "order": ["programming_languages", "frameworks_libraries", "tools_platforms"]
+  },
+  "experience": { "limit": 4 },
+  "projects": { "limit": 5 },
+  "certifications": {},
+  "languages": {}
+}
