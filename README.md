@@ -123,6 +123,16 @@ Everything lives here. Leave a field as an empty string (`""`) and it is skipped
   "certifications": [
     { "id": "c1", "name": "AWS ML Specialty", "issuer": "Amazon", "date": "2025" }
   ],
+  "publications": [
+    {
+      "id": "p1",
+      "title": "Title of Your Paper",
+      "venue": "Journal Name, Vol. 1(2), pp. 10-20",
+      "year": "2026",
+      "authors": "Y. Name, Z. Name",
+      "link": "https://doi.org/xxxx"
+    }
+  ],
   "languages": [
     { "id": "l1", "language": "English", "level": "Fluent" }
   ]
@@ -149,7 +159,7 @@ A profile tailors the same master data to a specific job title:
 
 Selection rules:
 
-- `sections`: order and which sections appear. Supported: `summary`, `skills`, `experience`, `projects`, `education`, `certifications`, `languages`.
+- `sections`: order and which sections appear. Supported: `summary`, `skills`, `experience`, `projects`, `education`, `certifications`, `publications`, `languages`.
 - `skills.order`: display order of skill categories (keys from the master `skills` object).
 - `skills.include`: restrict categories (default: all).
 - `experience` / `projects` / `education`: `include` (list of item `id`s) and `limit` (max items). Omit `include` to use all entries.

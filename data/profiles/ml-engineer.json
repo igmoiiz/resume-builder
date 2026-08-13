@@ -1,13 +1,13 @@
 {
-  "filename": "Resume_ML_Engineer",
-  "title": "Machine Learning Engineer",
-  "summary": "Machine Learning Engineer specializing in [domain]. [Years] of experience building and deploying [ML systems] end-to-end, from data pipelines to model serving, with a focus on [your strength]. Passionate about [topic] and production-grade [infra/tooling].",
-  "sections": ["summary", "skills", "experience", "projects", "education", "certifications"],
+  "filename": "Resume_AI_ML_Engineer",
+  "title": "AI / ML Engineer",
+  "summary": "AI/ML Engineer with ~1.5 years of experience building and deploying machine learning systems — from stock-prediction models that drove ~30% revenue growth at Brain Hub Technologies to production computer-vision and LLM fine-tuning projects. Co-author of published research on Generative AI in a HEC-recognized journal, with competitive Kaggle results (0.97 ROC-AUC). Hands-on across PyTorch, Hugging Face, FastAPI, and end-to-end MLOps.",
+  "sections": ["summary", "skills", "experience", "projects", "publications", "education", "certifications"],
   "skills": {
-    "order": ["frameworks_libraries", "programming_languages", "tools_platforms"]
+    "order": ["ml_frameworks", "ml_techniques", "computer_vision", "programming_languages", "data_mlops", "mobile_web"]
   },
-  "experience": { "limit": 4 },
-  "projects": { "limit": 4 },
+  "experience": { "limit": 5 },
+  "projects": { "limit": 8 },
   "certifications": {},
   "languages": {}
 }

@@ -1,75 +1,176 @@
 {
-  "name": "[Your Full Name]",
-  "role": "[Your Primary Target Role]",
+  "name": "Moiz Baloch",
+  "role": "AI / ML Engineer",
   "contact": {
-    "email": "you@example.com",
-    "phone": "+1 234 567 8900",
-    "location": "City, Country",
-    "linkedin": "linkedin.com/in/yourhandle",
-    "github": "github.com/yourhandle",
-    "portfolio": ""
+    "email": "moaiz3110@gmail.com",
+    "phone": "+92 306 7892235",
+    "location": "Multan, Pakistan",
+    "linkedin": "linkedin.com/in/moiz-baloch-a615392b4",
+    "github": "github.com/igmoiiz",
+    "portfolio": "moiz-baloch.vercel.app"
   },
   "skills": {
-    "programming_languages": ["Python", "SQL", "C++"],
-    "frameworks_libraries": ["PyTorch", "TensorFlow", "scikit-learn", "Pandas"],
-    "tools_platforms": ["Git", "Docker", "MLflow", "AWS"]
+    "programming_languages": ["Python", "SQL", "Dart", "JavaScript"],
+    "ml_frameworks": ["PyTorch", "TensorFlow", "Hugging Face (Transformers, PEFT, TRL)", "scikit-learn"],
+    "ml_techniques": ["XGBoost", "LightGBM", "CatBoost", "Optuna", "SHAP", "QLoRA/LoRA", "Feature Engineering"],
+    "computer_vision": ["OpenCV", "Ultralytics YOLO", "ByteTrack", "MediaPipe"],
+    "data_mlops": ["Pandas", "NumPy", "FastAPI", "MLflow", "DVC", "Docker", "Git", "PostgreSQL"],
+    "mobile_web": ["Flutter", "Node.js", "REST APIs", "WebSockets", "Streamlit"]
   },
   "experience": [
     {
-      "id": "example-internship",
-      "role": "Data Science Intern",
-      "company": "[Company Name]",
-      "location": "City, Country",
-      "start": "Jun 2025",
-      "end": "Sep 2025",
+      "id": "brain-hub",
+      "role": "Senior ML Engineer",
+      "company": "Brain Hub Technologies (Trade With Shaw)",
+      "location": "Multan, Pakistan",
+      "start": "Jan 2025",
+      "end": "Oct 2025",
       "bullets": [
-        "Built [X] that did [Y], improving [metric] by [Z]%.",
-        "Collaborated with [team] to [outcome], using [tools].",
-        "Automated [process], saving [N] hours per week."
+        "Designed and deployed stock-price prediction models to improve trading profitability, using Python-based ML pipelines — contributing ~30% increase in trading revenue across internal operations and international client portfolios.",
+        "Built end-to-end pipelines from feature engineering to model serving, ensuring consistent, measurable performance across multiple client portfolios."
+      ]
+    },
+    {
+      "id": "al-safeena",
+      "role": "Senior Mobile Application Developer (Remote)",
+      "company": "Al-Safeena (Saudi Arabia)",
+      "location": "Remote",
+      "start": "Oct 2025",
+      "end": "May 2026",
+      "bullets": [
+        "Built a home-services freelance marketplace to give Saudi vendors a centralized platform for consistent business, using Flutter and Node.js backends — contributing ~40% increase in company revenue.",
+        "Continuing as Final Year Project: managing incremental feature development and deployment of the live platform."
       ]
     }
   ],
   "education": [
     {
-      "id": "example-degree",
-      "degree": "B.S. Computer Science (AI/ML)",
-      "school": "[University Name]",
-      "location": "City, Country",
-      "start": "Sep 2021",
-      "end": "Jun 2025",
-      "gpa": "3.8/4.0",
+      "id": "air-university",
+      "degree": "B.S. Computer Science",
+      "school": "Air University",
+      "location": "Multan, Pakistan",
+      "start": "Oct 2023",
+      "end": "Jun 2027",
+      "gpa": "",
       "highlights": [
-        "Relevant coursework: Machine Learning, Deep Learning, Data Structures & Algorithms",
-        "Senior project: [short description]"
+        "Relevant coursework: Machine Learning, Deep Learning, Data Structures & Algorithms, Databases",
+        "Final Year Project: Al-Safeena — home services marketplace for a Saudi Arabian client"
       ]
     }
   ],
   "projects": [
     {
-      "id": "example-project",
-      "name": "[Project Name]",
-      "date": "2025",
-      "tech": ["PyTorch", "Hugging Face", "FastAPI"],
-      "summary": "[One-line description of the project and its impact.]",
+      "id": "visionguard",
+      "name": "VisionGuard — Production Video Analytics Platform",
+      "date": "2026",
+      "tech": ["YOLO11", "ByteTrack", "OpenCV", "FastAPI", "WebSockets", "PySide6"],
+      "summary": "",
       "bullets": [
-        "Fine-tuned [model] on [dataset] to achieve [metric].",
-        "Deployed [service] with [infra], handling [load]."
+        "Built a real-time intelligent video analytics platform to run reliably on CPU-only hardware, using YOLO11 detection, ByteTrack tracking, and a 9-rule event engine (intrusion, loitering, line-crossing).",
+        "Architected with 12 enterprise design patterns and a publish/subscribe frame bus, served through a FastAPI + WebSocket API with an analytics dashboard."
       ]
+    },
+    {
+      "id": "researchmate",
+      "name": "ResearchMate — LLM Fine-Tuning for Scientific QA",
+      "date": "2026",
+      "tech": ["Qwen2.5-3B", "LoRA", "Transformers", "TRL", "PubMedQA", "arXiv"],
+      "summary": "",
+      "bullets": [
+        "Fine-tuned a 3B instruction model to answer research questions from scientific literature, using LoRA on a 3,000-example PubMedQA/arXiv instruction dataset with 4-bit quantization.",
+        "Evaluated base vs. fine-tuned models on latency, task quality, and hallucination behavior."
+      ]
+    },
+    {
+      "id": "jarvis",
+      "name": "J.A.R.V.I.S — Agentic Voice Assistant",
+      "date": "Jan 2026 – Present",
+      "tech": ["Whisper", "Ollama", "Qwen2.5", "Python"],
+      "summary": "",
+      "bullets": [
+        "Built a local-first, privacy-focused voice assistant to automate repetitive digital tasks hands-free, integrating Whisper speech-to-text, Qwen2.5 reasoning, 40+ tool actions, and persistent memory."
+      ]
+    },
+    {
+      "id": "smartphone-kaggle",
+      "name": "Smartphone Addiction Prediction — Kaggle Competition",
+      "date": "2026",
+      "tech": ["LightGBM", "XGBoost", "CatBoost", "Optuna", "scikit-learn"],
+      "summary": "",
+      "bullets": [
+        "Built a 4-model ensemble with Optuna-tuned hyperparameters and fold-safe target encoding to predict smartphone addiction risk, achieving Public LB 0.97094 / OOF AUC 0.969996."
+      ]
+    },
+    {
+      "id": "rbc",
+      "name": "Red Blood Cell Anomaly Detection Pipeline",
+      "date": "Jun 2024 – Jul 2024",
+      "tech": ["XGBoost", "SHAP", "Ollama", "Qwen2.5-7B"],
+      "summary": "",
+      "bullets": [
+        "Built an end-to-end medical ML pipeline to accelerate blood-disease screening and reduce manual inspection, using XGBoost classification with ~92%+ validated accuracy and SHAP interpretability.",
+        "Integrated a local LLM to auto-generate clinical reports from diagnostic features, with a rule-based fallback for zero downtime."
+      ]
+    },
+    {
+      "id": "blynd",
+      "name": "BLYND — AI-Driven Social Platform",
+      "date": "Nov 2023 – Jun 2024",
+      "tech": ["Optuna", "Recommendation Systems", "Python"],
+      "summary": "",
+      "bullets": [
+        "Designed a social media platform with an Optuna-tuned, self-learning model that auto-suggests content and products based on user behavior."
+      ]
+    },
+    {
+      "id": "idea-catalyst",
+      "name": "Idea Catalyst — AI Project Evaluation Platform",
+      "date": "Feb 2026 – Mar 2026",
+      "tech": ["FastAPI", "TypeScript", "AI Analysis"],
+      "summary": "",
+      "bullets": [
+        "Built a platform for Air University faculty to publish project recommendations, with an AI analysis module generating market potential, feasibility scores, and development guidance per idea."
+      ]
+    },
+    {
+      "id": "video-translator",
+      "name": "Video Call Translator Agent",
+      "date": "Nov 2025",
+      "tech": ["Speech-to-Text", "Machine Translation", "WebSockets"],
+      "summary": "",
+      "bullets": [
+        "Built a real-time multilingual meeting translator (NUST hackathon) to remove language barriers in freelance and international collaboration, using live speech-to-text and low-latency translation."
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "id": "qrjs-paper",
+      "title": "Adoption Readiness and Perceived Reliability of Generative AI Tools in Software Development Education",
+      "venue": "Qualitative Research Journal for Social Studies (HEC-Recognized), 3(2), pp. 293-320",
+      "year": "2026",
+      "authors": "A. Bilal, E. Qazi, A. Noor, A. Moiz, M.A. Lodhi",
+      "link": "https://doi.org/10.63878/qrjs1100"
     }
   ],
   "certifications": [
     {
-      "id": "example-cert",
-      "name": "[Certification Name]",
-      "issuer": "[Issuer]",
-      "date": "2025"
+      "id": "anthropic-claude",
+      "name": "Anthropic Claude 101 Courses (incl. Claude Code)",
+      "issuer": "Anthropic",
+      "date": "2026"
     }
   ],
   "languages": [
     {
-      "id": "example-language",
+      "id": "english",
       "language": "English",
       "level": "Fluent"
+    },
+    {
+      "id": "urdu",
+      "language": "Urdu",
+      "level": "Native"
     }
   ]
 }

@@ -1,13 +1,13 @@
 {
   "filename": "Resume_General",
-  "title": "[Your Primary Target Role]",
-  "summary": "[2-3 sentence general summary: who you are, your key strengths, and what you are looking for.]",
-  "sections": ["summary", "skills", "experience", "projects", "education", "certifications"],
+  "title": "AI / ML Engineer",
+  "summary": "AI/ML Engineer experienced in building and shipping machine learning products end-to-end — mobile, backend, and ML. Delivered stock-prediction models with measurable revenue impact, an international freelance marketplace, published research on Generative AI, and production computer-vision and LLM fine-tuning projects.",
+  "sections": ["summary", "skills", "experience", "projects", "publications", "education", "certifications"],
   "skills": {
-    "order": ["programming_languages", "frameworks_libraries", "tools_platforms"]
+    "order": ["programming_languages", "ml_frameworks", "ml_techniques", "computer_vision", "data_mlops", "mobile_web"]
   },
   "experience": { "limit": 5 },
-  "projects": { "limit": 5 },
+  "projects": { "limit": 6 },
   "certifications": {},
   "languages": {}
 }

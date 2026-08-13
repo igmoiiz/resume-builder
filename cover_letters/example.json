@@ -1,19 +1,20 @@
 {
-  "company": "Acme Data Solutions",
-  "role": "Machine Learning Engineer",
+  "company": "Acme AI Labs",
+  "role": "AI / ML Engineer",
   "date": "",
   "recipient": {
     "name": "Hiring Manager",
     "title": "",
-    "company": "Acme Data Solutions",
+    "company": "Acme AI Labs",
     "address": ["123 Innovation Drive", "San Francisco, CA 94107"]
   },
-  "subject": "Application for Machine Learning Engineer",
+  "subject": "Application for AI / ML Engineer",
   "body": [
     "Dear Hiring Manager,",
-    "[Opening paragraph: introduce yourself, the role you are applying for, and why you are interested in this company.]",
-    "[Middle paragraph: highlight your most relevant skills and experience. Mention 1-2 specific achievements with numbers, and connect them to the requirements of the role.]",
-    "[Closing paragraph: summarize your enthusiasm, reference your attached resume, and invite them to discuss your application.]"
+    "I am an AI/ML Engineer with ~1.5 years of experience shipping machine learning systems that deliver measurable business results. At Brain Hub Technologies I designed and deployed stock-prediction models that contributed to a ~30% increase in trading revenue, and as a developer for Al-Safeena I built a home-services marketplace that drove ~40% revenue growth for a Saudi Arabian client. I am applying for the AI/ML Engineer role at Acme AI Labs because [reason tied to the company/mission].",
+    "My work spans the full ML lifecycle: fine-tuning LLMs with LoRA (Qwen2.5-3B on scientific QA data, with hallucination analysis), building production computer-vision systems (YOLO11 + ByteTrack video analytics with event engines and FastAPI serving), and engineering tabular models tuned with Optuna that reached 0.97094 on a Kaggle leaderboard. I co-authored a study on Generative AI adoption published in an HEC-recognized journal, and I apply the same rigor to every pipeline I build.",
+    "I would welcome the chance to discuss how my experience building and deploying ML systems end-to-end can contribute to [specific outcome/team goal]. My resume is attached, and I am available for an interview at your convenience.",
+    "Thank you for your time and consideration."
   ],
   "closing": "Sincerely,"
 }

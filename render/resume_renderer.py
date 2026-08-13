@@ -4,9 +4,11 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from reportlab.platypus import Paragraph, Spacer
+from reportlab.platypus import KeepTogether, Paragraph, Spacer
 
 from render import pdf as pdfkit
+
+WORD_MAP = {"ml": "ML", "mlops": "MLOps", "ai": "AI", "cv": "CV", "api": "API"}
 
 
 def _clean(value):
@@ -14,7 +16,8 @@ def _clean(value):
 
 
 def _label(category):
-    return category.replace("_", " ").title()
+    words = category.replace("_", " ").title().split()
+    return " ".join(WORD_MAP.get(word.lower(), word) for word in words)
 
 
 class ResumeRenderer:
@@ -86,8 +89,9 @@ class ResumeRenderer:
             if location:
                 left += f", {pdfkit.escape(location)}"
             right = " – ".join([d for d in (start, end) if d])
-            flowables.append(pdfkit.header_table(f"<b>{left}</b>", pdfkit.escape(right), self.styles))
-            flowables += self._bullets(entry.get("bullets", []))
+            group = [pdfkit.header_table(f"<b>{left}</b>", pdfkit.escape(right), self.styles)]
+            group += self._bullets(entry.get("bullets", []))
+            flowables.append(KeepTogether(group))
         return flowables
 
     def _section_projects(self):
@@ -101,12 +105,13 @@ class ResumeRenderer:
             tech = [t for t in entry.get("tech", []) if _clean(t)]
             summary = _clean(entry.get("summary"))
             left = f"<b>{pdfkit.escape(name)}</b>"
-            flowables.append(pdfkit.header_table(left, pdfkit.escape(date), self.styles))
+            group = [pdfkit.header_table(left, pdfkit.escape(date), self.styles)]
             if tech:
-                flowables.append(Paragraph(f"Tech: {pdfkit.escape(', '.join(tech))}", self.styles["project_tech"]))
+                group.append(Paragraph(f"Tech: {pdfkit.escape(', '.join(tech))}", self.styles["project_tech"]))
             if summary and not entry.get("bullets"):
-                flowables.append(Paragraph(pdfkit.escape(summary), self.styles["detail_line"]))
-            flowables += self._bullets(entry.get("bullets", []))
+                group.append(Paragraph(pdfkit.escape(summary), self.styles["detail_line"]))
+            group += self._bullets(entry.get("bullets", []))
+            flowables.append(KeepTogether(group))
         return flowables
 
     def _section_education(self):
@@ -125,15 +130,16 @@ class ResumeRenderer:
             if school:
                 left += f" — {pdfkit.escape(school)}"
             right = " – ".join([d for d in (start, end) if d])
-            flowables.append(pdfkit.header_table(f"<b>{left}</b>", pdfkit.escape(right), self.styles))
+            group = [pdfkit.header_table(f"<b>{left}</b>", pdfkit.escape(right), self.styles)]
             detail = []
             if location:
                 detail.append(pdfkit.escape(location))
             if gpa:
                 detail.append(pdfkit.escape(gpa))
             if detail:
-                flowables.append(Paragraph(" · ".join(detail), self.styles["detail_line"]))
-            flowables += self._bullets(entry.get("highlights", []))
+                group.append(Paragraph(" · ".join(detail), self.styles["detail_line"]))
+            group += self._bullets(entry.get("highlights", []))
+            flowables.append(KeepTogether(group))
         return flowables
 
     def _section_certifications(self):
@@ -151,6 +157,31 @@ class ResumeRenderer:
             if date:
                 text += f" ({date})"
             flowables.append(Paragraph(pdfkit.escape(text), self.styles["skills_line"]))
+        return flowables
+
+    def _section_publications(self):
+        entries = self.data.get("publications", [])
+        cfg = self.profile.get("publications", {}) or {}
+        selected = self._select(entries, cfg)
+        flowables = []
+        for entry in selected:
+            title = _clean(entry.get("title"))
+            venue = _clean(entry.get("venue"))
+            year = _clean(entry.get("year"))
+            authors = _clean(entry.get("authors"))
+            link = _clean(entry.get("link"))
+            if not title:
+                continue
+            text = f"<b>{pdfkit.escape(title)}</b>"
+            if venue:
+                text += f" — {pdfkit.escape(venue)}"
+            if year:
+                text += f" ({year})"
+            if authors:
+                text += f"<br/><font color='#555555'>{pdfkit.escape(authors)}</font>"
+            if link:
+                text += f"<br/><font color='#555555'>{pdfkit.escape(link)}</font>"
+            flowables.append(Paragraph(text, self.styles["skills_line"]))
         return flowables
 
     def _section_languages(self):
